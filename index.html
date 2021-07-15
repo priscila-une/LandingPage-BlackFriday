@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2f4f762cce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Black Friday - Game On</title>
+</head>
+<body>
+    <header>
+        <h1 id="logo">GAME<span>ON</span></h1>
+    </header>
+    <main id="main"> 
+        <h1>Black <span>Friday</span><i class="fas fa-tags"></i></h1>
+        <h2 id="dayBF">27 de Novembro</h2>
+        <p id="subtitle">Aproveite as promoções, por tempo limitado!</p>
+        <div class='container'>
+            <div class="card">
+                <span id="days">30</span>
+                <p>Dias</p>
+            </div>
+            <div class="card">
+                <span id="hours">10</span>
+                <p>Horas</p>
+            </div>
+            <div class="card">
+                <span id="minutes">30</span>
+                <p>Minutos</p>
+            </div>
+        </div>
+        <section id="products">
+            <div id="ps5" class="product">
+                <i class="fas fa-certificate ps5"></i>
+                <img src="https://images.tcdn.com.br/img/img_prod/604470/console_playstation5_drive_com_leitor_ps5_janeiro_1821_1_20201113102115.png" alt="ps5">
+                
+            </div>
+            <div id="nintendo" class="product">
+                <img src="https://m.media-amazon.com/images/I/61-PblYntsL._AC_SX679_.jpg" alt="">
+                <i class="fas fa-certificate"></i>
+            </div>
+            <div id="xbox" class="product">
+                <img src="https://lh3.googleusercontent.com/proxy/zYiHhfRzXE-_1Pd3qlgUQoO_4-uT16AzOgr2zfL5Q6TVO6L4Lc8HeYNVs4iYALL99xZZbZJs0HgRy_pcpJRNuMwaNU7lTWbwKxxrPRR0kgePWPP-rYIJ3nvgmue0dOeWBKyBA19IRMguSoKF8KCKrCU" alt="xbox">
+                <i class="fas fa-certificate"></i>
+            </div>
+        </section>
+        <h2>Fique por dentro de todas as promoções!</h2>
+        <form action="">
+        <input id="inputEmail" type="email" placeholder="Seu melhor email">
+        <button onclick="saveOnStorage()">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <h3>Desenvolvido com ❤️ by Evelin Une <a href="https://github.com/priscila-une"><i class="fab fa-github"></i></a></h3>
+        
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

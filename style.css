@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:linear-gradient(-45deg, rgb(19, 17, 17), rgb(0, 0, 0),rgb(70, 69, 69) ) ;
+    background-size: 200%;
+    color: white;
+    animation: backgroundGradient 15s infinite ease-in-out;
+}
+
+@keyframes backgroundGradient {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.fa-certificate{
+    font-size: 80px;
+    color: rgb(75, 219, 75);
+}
+.fa-certificate::after{
+    content: '20%';
+    position: relative;
+    top: -20px;
+    left: -60px;
+    font-size: 30px;
+    color: crimson;
+}
+
+.ps5 {
+    position: relative;
+    left: 100px;
+    top: -100px;
+   
+}
+.ps5::after{
+    content: '30%';
+    position: relative;
+    top: -20px;
+    right: 10px;
+    font-size: 30px;
+}
+
+
+#logo{
+    padding: 20px;
+}
+#logo span{
+    color: rgb(233, 106, 15);
+}
+
+#dayBF{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgb(75, 219, 75);
+}
+
+#main{
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;   
+}
+
+#main h1{
+   font-size: 6rem; 
+}
+
+#main h1 span{
+   color: rgb(75, 219, 75);
+   
+}
+#subtitle{
+    font-size: 1.5rem;
+    margin-top: 5vh;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.card{
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgb(75, 219, 75);
+    box-shadow: 1px 1px 10px 1px rgb(75, 219, 75);
+    font-size: 2.5rem;
+    padding-top: 3vh;
+}
+
+.card p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 2vh;
+}
+
+#products{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin: 40px;
+    
+    
+}
+.product{
+    width: 40vw;
+    height: 30vh;
+    padding: 10px;
+    margin: 5vh;
+}
+
+.product:hover{
+    transform: scale(1.2)
+}
+
+#ps5 img, #nintendo img, #xbox img{
+    width: 50%;
+}
+
+h2{
+    margin-top: 8vh;
+}
+
+form{
+    margin-top: 3vh;
+}
+
+form input{
+    width: 25%;
+    height: 40px;
+}
+
+form button{
+    width: 10%;
+    height: 40px;
+    background: crimson;
+    border: none;
+    font-size: 1em;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10vh;
+    
+}
+
+footer{
+    text-align: center;
+    margin: 20px;
+}
+
+footer a{
+    font-size: 30px;
+    color: white;
+}
+
+footer a:hover{
+    color: crimson;
+}
+
+@media (max-width: 768px){
+    .fa-certificate{
+        display: none;
+    }
+}
+    
+@media (max-width: 700px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5vh;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        gap: 10px; 
+    }
+    
+    form input{
+        width: 80%;
+    }
+
+    form button{
+        width: 70vw;
+    }
+
+    #products{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    #ps5 img, #nintendo img, #xbox img{
+        width: 100%;
+    }
+
+    .fa-certificate{
+        display: none;
+    }
+
+}
